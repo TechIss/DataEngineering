@@ -38,18 +38,17 @@ ALTER TABLE planeten MODIFY massa INT(11) NOT NULL;
 
 ALTER TABLE 
     planeten
-<<<<<<< HEAD
-ADD bezoekdatum DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-
-INSERT INTO planeten 
-    (Naam, diameter, afstand, massa, bezoekdatum, id) 
-VALUES ('Mars', 6794, 227936640, 0, CURRENT_TIMESTAMP, id)
-=======
 ADD bezoekdatum DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
+ALTER TABLE planeten ADD id int NOT NULL AUTO_INCREMENT PRIMARY KEY;
 
 INSERT INTO planeten 
     (Naam, diameter, afstand, massa, bezoekdatum, id) 
 VALUES ('Mars', 6794, 227936640, 0, CURRENT_TIMESTAMP, id);
->>>>>>> feature-database
 
-ALTER TABLE planeten ADD id int NOT NULL AUTO_INCREMENT PRIMARY KEY;
+UPDATE `planeten` 
+SET `Naam` = 'Teenalpen' 
+WHERE `planeten`.`id` = 7;
+
+DELETE FROM planeten
+WHERE `planeten`.`id` = 7;
