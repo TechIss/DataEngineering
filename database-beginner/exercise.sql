@@ -45,3 +45,7 @@ INSERT INTO planeten
 VALUES ('Mars', 6794, 227936640, 0, CURRENT_TIMESTAMP, id);
 
 ALTER TABLE planeten ADD id int NOT NULL AUTO_INCREMENT PRIMARY KEY;
+
+UPDATE `planeten` 
+SET `Naam` = 'Teenalpen' 
+WHERE `planeten`.`id` = 7
