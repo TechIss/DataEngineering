@@ -1,0 +1,20 @@
+Wat is mijn favoriete vak?
+Ik heb nog geen favoriete vak, maar wat ik graag wil leren is Python.
+
+Waarom?
+Omdat ik zie dat veel bedrijven toch eerder Python vragen dan java, natuurlijk zijn er
+Java developers, maar ik denk dat je met Python veel kan bereiken.
+
+Waarvoor kan je Python gebruiken?
+Python is een codeertaal voor algemene doeleinde,
+wat betekent dat het, in tegenstelling tot HTML, CSS en JavaScript,
+kan worden gebruikt voor andere soorten programmeer- en softwareontwikkeling naast webontwikkeling. 
+Met bertrekking tot back-endontwikkeling, softwareontwikkeling, datawetenschap en het schrijven van systeemscripts.
+
+Wat wil ik bereiken of bereikt hebben?
+    1. Algemene kennis over Python
+    2. Algemene kennis over SQL
+    3. Kennis vergaart hebben hoe je data kan combineren in een .json en 
+    4. Hoe je deze data kan aanspreken door een API call en hoe je de end points aanroept.
+
+Ik wil met deze kennis op het einde een eindproject maken waar te zien is dat ik data kan verzamelen en visualiseren.
