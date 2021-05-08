@@ -48,4 +48,7 @@ VALUES ('Mars', 6794, 227936640, 0, CURRENT_TIMESTAMP, id);
 
 UPDATE `planeten` 
 SET `Naam` = 'Teenalpen' 
-WHERE `planeten`.`id` = 7
+WHERE `planeten`.`id` = 7;
+
+DELETE FROM planeten
+WHERE `planeten`.`id` = 7;
