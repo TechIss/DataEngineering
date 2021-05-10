@@ -21,13 +21,31 @@ INSERT INTO `series` (`title`, `rating`, `description`, `has_won_awards`, `seaso
     ('De luizenmoeder', 4.8, 'Het verhaal speelt zich af op de fictieve basisschool De Klimop in Dokkum. De school heeft een zwaar jaar achter de rug, waarin enkele leraren en de conciërge ontslagen zijn. Het is nu aan de schoolleiding om in het nieuwe schooljaar een frisse start te maken. Centraal staan Hannah (Jennifer Hoffman), de moeder van Floor, de \'luizenmoeder\', en juf Ank (Ilse Warringa), de kordate onderwijzeres. Als moeder van een nieuwe leerling moet Hannah zich staande houden in een absurdistische wereld van hangouders, moedermaffia, schoolpleinregels, rigide verjaardagsprotocollen, verantwoorde traktaties, parkeerbeleid, appgroepjes, ouderparticipatie en ander leed. Ook worden de belevenissen van de andere ouders en de schoolleiding gevolgd. De ouders (moeders) worden geacht het onderwijs te ondersteunen als vrijwilligers en de onderste tree in de bijbehorende hiërarchie die tot de ouderraad loopt is die van luizenmoeder, de moeder die schoolkinderen met een luizenkam controleert op luizen in het haar en deze verwijdert.', 1, 2, 'NL', 'NL'),
     ('My little pony', 1, 'De serie begint met een eenhoorn genaamd Twilight Sparkle, een student van Equestria\'s heerser, prinses Celestia. Nadat ze ziet hoe haar student zich alleen maar bezighoudt met boeken, stuurt prinses Celestia haar naar Ponyville met de opdracht een paar vrienden te maken. Twilight Sparkle, samen met haar assistent, een babydraak genaamd Spike, raakt bevriend met de pony\'s Pinkie Pie, Applejack, Rainbow Dash, Rarity en Fluttershy. Samen beleven ze avonturen binnen en buiten de stad en lossen ze diverse problemen op. De meeste afleveringen eindigen met Twilight Sparkle of iemand anders die een brief schrijft aan de prinses over wat ze die aflevering geleerd heeft over de magie van de vriendschap. Ook zit er in iedere aflevering een belangrijke les over vriendschap.', 0, 25, 'UK', 'NL');
 
-SELECT * FROM `series`
+SELECT * FROM `series`;
 
-SELECT * FROM `series` WHERE has_won_awards=1
-SELECT * FROM `series` WHERE rating>2.5
-SELECT * FROM `series` WHERE country="UK" AND language="NL"
-SELECT * FROM `series` WHERE seasons<5
-SELECT MAX(rating) FROM `series`
-SELECT * FROM `series` where seasons<3 OR seasons>20
-SELECT * FROM `series` where title LIKE '%Th%'
-SELECT * FROM `series` where seasons != 3
+SELECT * FROM `series` WHERE has_won_awards=1;
+SELECT * FROM `series` WHERE rating>2.5;
+SELECT * FROM `series` WHERE country="UK" AND language="NL";
+SELECT * FROM `series` WHERE seasons<5;
+SELECT MAX(rating) FROM `series`;
+SELECT * FROM `series` where seasons<3 OR seasons>20;
+SELECT * FROM `series` where title LIKE '%Th%';
+SELECT * FROM `series` where seasons != 3;
+
+SELECT * FROM `series` 
+WHERE rating>2.5
+ORDER BY
+    rating DESC;
+
+SELECT * FROM `series` 
+WHERE seasons<5
+ORDER BY
+    seasons ASC;
+
+SELECT * FROM `series` 
+WHERE seasons<3 OR seasons>20
+ORDER BY
+    seasons AND country ASC
+
+
+
