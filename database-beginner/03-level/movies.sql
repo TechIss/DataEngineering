@@ -1,11 +1,11 @@
 CREATE TABLE Movies (
     ID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     Title varchar(255) NOT NULL,
-    Duration int NOT NULL,
-    Releasedate int NULL, 
-    Country int NULL,
-    Discription INT NOT NULL,
-    Trailer INT NOT NULL
+    Duration TIME(N),
+    Releasedate DATE, 
+    Country varchar(255) NOT NULL,
+    Discription varchar(255) NOT NULL,
+    Trailer varchar(255) NOT NULL
 );
 
 
