@@ -1,10 +1,10 @@
 wachtwoord = input("wat is het wachtwoord? ")
-input = ("baas")
+wachtwoordInput = ("baas")
 
-i = ("Baas is ingelogd: True")
-x =  ("Baas is ingelogd: False")
+i = ("Baas ingelogd: true")
+x =  ("Baas ingelogd: false")
 
-if (wachtwoord == input): 
-    print(i)
+if(wachtwoord == wachtwoordInput):
+   print(i)
 else:
     print(x)
