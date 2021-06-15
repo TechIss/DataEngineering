@@ -1,9 +1,8 @@
-import sys
-import requests
 import json
+import requests
 
-x = sys.argv
-url = requests.get("https://jsonplaceholder.typicode.com/todos"+ str(x))
-title=json.loads(r)
+r = requests.get("https://jsonplaceholder.typicode.com/todos/2")
+test = r.json()
+json_string = json.dumps(test)
 
-print(title)
+print(test['title'])
